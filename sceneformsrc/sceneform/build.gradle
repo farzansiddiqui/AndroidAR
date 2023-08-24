@@ -15,12 +15,12 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 34
     defaultConfig {
-        namespace 'com.android.library'
+        namespace 'com.google.ar.sceneform'
         // Sceneform requires minSdkVersion >= 24.
         minSdkVersion 24
-        targetSdkVersion 28
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
     }

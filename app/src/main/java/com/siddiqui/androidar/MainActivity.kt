@@ -30,9 +30,9 @@ class MainActivity : AppCompatActivity() {
 
         arFragment =
             (supportFragmentManager.findFragmentById(R.id.sceneform_ar_scene_view) as ArFragment?)!!
-        this.arFragment.setOnTapArPlaneListener { hitResult: HitResult, _: Plane?, motionEvent: MotionEvent? ->
+        this.arFragment.setOnTapArPlaneListener { hitResult: HitResult, _: Plane?, _: MotionEvent? ->
             val anchor = hitResult.createAnchor()
-            placeObjectOnScene(arFragment, anchor, Uri.parse("model.glb"))
+            placeObjectOnScene(arFragment, anchor, Uri.parse("chair.sfb"))
         }
     }
 
