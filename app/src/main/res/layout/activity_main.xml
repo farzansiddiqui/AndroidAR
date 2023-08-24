@@ -6,11 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/mArButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="AR Button!"
+
+
+    <fragment
+        android:id="@+id/sceneform_ar_scene_view"
+        android:name="com.google.ar.sceneform.ux.ArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
